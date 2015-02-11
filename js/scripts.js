@@ -19,13 +19,20 @@ var coinCombo = function(totalCents) {
 $(document).ready(function() {
   $("form#coin-form").submit(function(event) {
     var change = parseInt($("#cents").val());
-    var results = coinCombo(change);
-    $("#quarter").text(results[0]);
-    $("#dimes").text(results[1]);
-    $("#nickels").text(results[2]);
-    $("#pennies").text(results[3]);
 
-    $("#results").show();
-    event.preventDefault();
+    if (change){
+
+      var results = coinCombo(change);
+
+      $("#quarter").text(results[0]);
+      $("#dimes").text(results[1]);
+      $("#nickels").text(results[2]);
+      $("#pennies").text(results[3]);
+
+      $("#results").show();
+      event.preventDefault();
+    }else{
+      alert("Please enter a number");
+    }
   });
 });
