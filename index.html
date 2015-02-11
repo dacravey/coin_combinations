@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Combo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Welcome to Coin Combo App</h1>
+      <form id="coin-form">
+        <div class=form-group>
+          <label for="cents">Enter amount of coins here</label>
+          <input id="cents" type="text" class="form-control">
+        </div>
+
+        <button type="submit" btn="btn-primary">Find Coin Combo</button>
+
+      </form>
+
+      <div id="results">
+        <h3>The minimum number of coins</h3>
+        <ul>
+          <li><span id ="quarter"></span> quarters</li>
+          <li><span id ="dimes"></span> dimes</li>
+          <li><span id ="nickels"></span> nickles</li>
+          <li><span id ="pennies"></span> pennies</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>
