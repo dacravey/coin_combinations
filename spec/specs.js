@@ -26,4 +26,8 @@ describe('coinCombo', function() {
   it("returns the correct change combination if user input is 532", function() {
     expect(coinCombo(532)).to.eql([21, 0, 1, 2]);
   });
+
+  it("returns zero change if user input is zero", function() {
+    expect(coinCombo(0)).to.eql([0,0,0,0]);
+  });
 });
